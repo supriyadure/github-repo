@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user=[{firstname:'sup',age:28,lastname:"madake"},
+        {firstname:'supriya',age:28,lastname:"madakedure"},
+        {firstname:'balaji',age:3,lastname:"patil"},
+        {firstname:'samarth',age:2,lastname:"madake"},];
+      
+
+const a=user.reduce((acc,cur)=>{
+    if(cur.age>3)
+    {
+        acc.push(cur.firstname)
+    }
+    return acc;
+},[]);
+console.log(a);
+    </script>
+</body>
+</html>

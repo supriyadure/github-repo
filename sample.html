@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// function name(params) {
+    
+// }
+// name({ a: 'a', b: 'b', c: '' })
+
+
+     function name() {
+       console.log(Object.keys(arguments[0]));
+        //    if(Object.keys(arguments[0])){
+console.log(delete arguments[0].age);
+ 
+           arguments[0].size="175cm"
+           arguments[0].weight="67kg"
+           console.log(arguments[0]);
+
+        }
+     
+     name({fn: 'Lisa', ln: 'Müller', age: 17, size: 175, weight: 67})
+    </script>
+</body>
+</html>

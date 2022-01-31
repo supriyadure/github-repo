@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const convertArrayToObject = (array, key) => {
+  const initialValue = {};
+  return array.reduce((obj, item) => {
+    return {
+      ...obj,
+      [item[key]]: item,
+    };
+  }, initialValue);
+};
+console.log(
+  convertArrayToObject(
+    [
+      { id: 111, name: 'John', age: 29 },
+      { id: 112, name: 'Sarah', age: 25 },
+      { id: 122, name: 'Kate', age: 22 },
+      { id: 123, name: 'Tom', age: 21 },
+      { id: 125, name: 'Emma', age: 24 },
+    ],
+    'id',
+  ),
+);
+    </script>
+</body>
+</html>

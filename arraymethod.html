@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class emp{
+    constructor(name,age,salary){
+this.name=name
+this.age=age;
+this.salary=salary
+document.write("this is constructor function")
+    }
+    info(){
+        document.write(`<h3> this is emp <h3> <br>
+            ${this.name} ${this.age}`)
+    }
+}
+class manager extends emp{
+    constructor(name){
+        document.write(`<br>this is manager<br> ${name}`)
+   
+    super();
+}
+    info(){
+        let pa=1200;
+        let all=12;
+        let total=this.salary+pa+all
+
+        document.write(total)
+      
+    }
+}
+var a=new manager("sup",23,50000)
+
+a.info()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n="1230006"
+       
+        var length=n.length;
+        var mid=length/2
+        console.log(length)
+        function balance(){
+            var res=0;
+        var num=0;
+            for(let i=0;i>mid;i++){
+             res+=n[i];
+            }
+            for(let j=mid+1;j<=n;j++){
+             num+=n[j];
+            }
+            if(res==num)
+                document.write(" bakanced")
+                
+            
+            else
+                
+                document.write("not bakanced")
+            
+            
+        }
+        balance();
+     
+    </script>
+</body>
+</html>

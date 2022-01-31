@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function leapyear(n){
+            for (const key of n) {
+                if(key%4==0){ 
+                    console.log(`the year is leap year ${key}`)
+            }
+else{
+    console.log(`the year is not leap year ${key}`)
+}
+
+}
+        }
+     var n=  [2000,2004,2008,2012,1991,2013];
+     leapyear(n)
+    </script>
+</body>
+</html>
