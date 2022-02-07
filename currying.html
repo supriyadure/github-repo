@@ -8,13 +8,17 @@
 </head>
 <body>
     <script>
-    let pobj1=new Promise((resolve,reject)=>{
-        let roll=[1,2,3];
-        setTimeout(()=>{
-            resolve(roll)
-        },1000)
-    })
-    pobj1.then(roll=>console.log(roll)).catch((rol)=>console.log(rol))
+        function curry(y) {
+            return function (d) {
+                return function (w) {
+                   console.log(y+d+w) 
+                }
+                
+            }
+            
+        }
+        const a=curry(1)(2)(3);
+  
     </script>
 </body>
 </html>
